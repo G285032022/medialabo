@@ -1,4 +1,7 @@
 ul li {
     color: red;
-    background-color: yellow;
+    border-bottom: solid red;
+}
+h2 {
+    border-bottom: 5px solid rgb(37, 78, 191);
 }

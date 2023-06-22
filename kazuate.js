@@ -20,6 +20,7 @@ function hantei() {
     // kotae と yoso が一致するかどうか調べて結果を出力
     // 課題3-1における出力先はコンソール
     if(kaisu < 3){
+        kaisu++;
       if(kotae === yoso){
           console.log("正解です．おめでとう!");
           kaisu = kaisu + 4
@@ -31,7 +32,7 @@ function hantei() {
           kaisu++;
       }
       if(kaisu === 2){
-
+        console.log("");
       }
     } else {
       console.log("答えは " + kotae + " でした．すでにゲームは終わっています");

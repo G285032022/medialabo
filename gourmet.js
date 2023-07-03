@@ -211,10 +211,10 @@ console.log(data.results.shop[0].station_name);
 console.log(data.results.shop[0].sub_genre.name);
 //検索結果2件目
 console.log(data.results.shop[1].access);
-console.log(data.results.shop[0].address);
-console.log(data.results.shop[0].budget.name);
-console.log(data.results.shop[0].catch);
-console.log(data.results.shop[0].genre.name);
-console.log(data.results.shop[0].open);
-console.log(data.results.shop[0].station_name);
-console.log(data.results.shop[0].sub_genre.name);
+console.log(data.results.shop[1].address);
+console.log(data.results.shop[1].budget.name);
+console.log(data.results.shop[1].catch);
+console.log(data.results.shop[1].genre.name);
+console.log(data.results.shop[1].open);
+console.log(data.results.shop[1].station_name);
+console.log(data.results.shop[1].sub_genre.name);

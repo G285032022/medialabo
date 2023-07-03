@@ -200,4 +200,21 @@ let data = {
 };
 
 /////////// 課題3-2 ここからプログラムを書こう
-
+//検索結果1件目
+console.log(data.results.shop[0].access);
+console.log(data.results.shop[0].address);
+console.log(data.results.shop[0].budget.name);
+console.log(data.results.shop[0].catch);
+console.log(data.results.shop[0].genre.name);
+console.log(data.results.shop[0].open);
+console.log(data.results.shop[0].station_name);
+console.log(data.results.shop[0].sub_genre.name);
+//検索結果2件目
+console.log(data.results.shop[1].access);
+console.log(data.results.shop[0].address);
+console.log(data.results.shop[0].budget.name);
+console.log(data.results.shop[0].catch);
+console.log(data.results.shop[0].genre.name);
+console.log(data.results.shop[0].open);
+console.log(data.results.shop[0].station_name);
+console.log(data.results.shop[0].sub_genre.name);

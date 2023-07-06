@@ -21,43 +21,48 @@
       <p></p>
     <h2>数当てゲーム</h2>
       <p><a href="kazuate.html">数当てゲームはここをクリック！！</a></p>
-      <p>この課題ではランダムに生成された1〜10の整数を、ユーザーが当てようと予想し当てようと試みるゲームを実施する。</p>
-      <p>手順↓</p>
+      <p>この課題ではランダムに生成された1〜10の整数を、ユーザーが当てようと予想し当てるゲームを実施する。</p>
+      <p>ルール</p>
       <ol>
-        <li>1から10までの整数をあらかじめ用意されたinput要素のテキストボックスに打ち込む</li>
-        <li>ユーザーがbutton要素の「回答」ボタンを押す</li>
-        <li>ユーザーの予想した回数と予想した数を表示する</li>
-        <li></li>
+        <li>ユーザーは3回まで予想することができる</li>
+      </ol>
+      <p>手順は以下の通りである</p>
+      <ol>
+        <li>用意されたテキストボックスに1から10までの整数を入力する</li>
+        <li>「回答」ボタンを押す</li>
+        <li>ユーザーの予想した回数と予想した数を表示する（テキストボックスに何も入力しなかった場合は予想した数をNaNとする）</li>
+        <li>もし予想があっていれば正解、間違っていれば、予想が大きいのか,小さいのかを表示する</li>
+        <li>4回目以降はその答えとゲームがすでに終了しているということをユーザー伝える</li>
       </ol>
       <p>数当てゲームのページ:</p>
     <h2>毎回の実験で作成したページ</h2>
       <h3>第1回 WWW と HTML</h3>
-        <p>今回は次のHTML要素（&lt;p&gt;,&lt;a&gt;,&lt;title&gt;,&lt;img&gt;）・空要素（&lt;br&gt;）・属性（href,target,src）、HTMLの文書全体の構造、コメント（&lt;!--&gt;&lt;--&gt;）、見出しと段落（&lt;h + 数字&gt;{ただし、昇順に文字は大きい}）、リスト（&lt;ul&gt;{番号なし},&lt;ol&gt;{番号あり},&lt;li&gt;）、説明リスト（&lt;dl&gt;,&lt;dt&gt;,&lt;dd&gt;）について学びました。また次の課題に取り組みました。課題1-1,1-2,1-3</p>
+        <p>今回は次のHTML要素（&lt;p&gt;,&lt;a&gt;,&lt;title&gt;,&lt;img&gt;）・空要素（&lt;br&gt;）・属性（href,src）、HTMLの文書全体の構造、コメント（&lt;!--&gt;&lt;--&gt;）、見出しと段落（&lt;h + 数字&gt;{ただし、昇順に文字は大きい}）、リスト（&lt;ul&gt;{番号なし},&lt;ol&gt;{番号あり},&lt;li&gt;）、説明リスト（&lt;dl&gt;,&lt;dt&gt;,&lt;dd&gt;）について学びました。</p>
         <p>演習の成果</p>
         <ol>
           <li><a href="practice-html/structure.html">演習1-3:HTML文書の作成</a></li>
           <li><a href="practice-html/elements.html">演習1-4:HTMLのさまざまな要素</a></li>
         </ol>
       <h3>第2回 CSS による Web ページの装飾</h3>
-        <p>今回は次のCSSによる見た目の設定（箇条書きの点をなくす・特定の要素を指定する・〇〇要素の中の△△要素・リンクの色設定）、セレクタ、プロパティ（font-size,width,background-color: 色;,border: dotted;transform: rotate（0.2turn））、グリッドレイアウト（display: grid;,grid-template-columns: 1fr 1fr,grid-auto-rows: px;）、グラデーション（background: linear-gradient（A,B）A色からB色へグラデーション）について学びました。また次の課題に取り組みました。</p>
+        <p>今回は次のCSSによる見た目の設定である（箇条書きの点をなくす・特定の要素を指定する・〇〇要素の中の△△要素・リンクの色設定）、セレクタ、プロパティ（font-size,width,background-color: 色;,border: dotted;transform: rotate（0.2turn））、グリッドレイアウト（display: grid;,grid-template-columns: 1fr 1fr,grid-auto-rows: px;）、グラデーション（background: linear-gradient（A,B）A色からB色へグラデーション）について学びました。</p>
         <p>演習の成果</p>
         <ol>
           <li><a href="practice-css/browser-intro.html">演習</a></li>
         </ol>
       <h3>第3回 JavaScript の基本</h3>
-        <p>今回は次のJavaScriptの基本（console.log（）;,undifined,null,for（let n of gakka）,オブジェクト名.メンバー名,変数let,比較演算子（===,!==）,型変換（文字列から整数へはNumber（）,浮動小数点数から整数へはMath.floor（））・JavaScriptとJavaの違い（コンパイルがない代わりにエラーを見つけにくい,上から順に一文一文見ていくため、順番を気にする必要がある,動的型付け）・デバッグの方法（例外で停止,ブレークポイント）について学びました。また次の課題に取り組みました。</p>
+        <p>今回は次のJavaScriptの基本（console.log（）;,undifined,null,for（let n of gakka） ・ オブジェクト名.メンバー名,変数let,比較演算子（===,!==） ・ 型変換（文字列から整数へはNumber（） ・ 浮動小数点数から整数へはMath.floor（）・ JavaScriptとJavaの違い（コンパイルがない代わりにエラーを見つけにくい,上から順に一文一文見ていくため、順番を気にする必要がある,動的型付け）・デバッグの方法（例外で停止,ブレークポイント）について学びました。</p>
         <p>演習の成果</p>
         <ol>
-          <li><a href="kazuate.html"></a>kazuate.html</li>
+          <li><a href="kazuate.html">kazuate.html</a></li>
         </ol>
       <h3>第4回 DOM と JavaScript</h3>
-        <p>今回は次のDOMの操作方法[検索-&lt;(document.querySelector('セレクタ');もしくわquerySelectorAll('セレクタ');)・変更-&lt;(要素.textContent=文字列);・CSSの変更-&lt;(要素.style.プロパティ名=値);・新しい要素の追加-&lt;その1(document.createElement(要素名); , 要素1.insertAdjacentElement('afterend'もしくわ'beforeend' , 要素2);),その2(要素.setAttribute(属性名，値); , 要素1.insertAdjacentElement('beforeend', 要素2);)・削除(要素.remove();)]について学びました。また次の課題に取り組みました。</p>
+        <p>今回は次のDOMの操作方法である検索 =&gt; document.querySelector('セレクタ');もしくわquerySelectorAll('セレクタ'); ・ 変更 =&gt;(要素.textContent=文字列); ・ CSSの変更 =&gt; (要素.style.プロパティ名=値); ・ 新しい要素の追加 =&gt; その1: document.createElement(要素名); , 要素1.insertAdjacentElement('afterend'もしくわ'beforeend' , 要素2); その2: 要素.setAttribute(属性名，値); , 要素1.insertAdjacentElement('beforeend', 要素2); ・ 削除 =&gt; 要素.remove();について学びました。</p>
         <p>演習の成果</p>
         <ol>
           <li><a href="practice-dom/dom-exercise.html">practice-dom/dom-exercise.html</a></li>
         </ol>
       <h3>第5回 イベント処理</h3>
-        <p>今回は次のについて学びました。また次の課題に取り組みました。・・・</p>
+        <p>今回は次のイベント処理の追加 =&gt; 検索（第4回参照してください）要素名.addEventListener('イベントの種類', イベントハンドラ);について学びました。</p>
         <p>演習の成果</p>
         <ol>
           <li><a href="practice-event/event-list.html">practice-event/event-list.html</a></li>

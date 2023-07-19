@@ -1,12 +1,20 @@
+h1 {
+    padding: 1rem 2rem;
+    border-left: 6px dashed #000;
+    background: linear-gradient(0.25turn,rgb(80, 219, 147), #ffefaf);
+    width: fit-content;
+}
+
 ul li {
     color: red;
     border-bottom: 5px solid red;
+    width: fit-content;
 }
 
 h2 {
     border-bottom: 5px solid rgb(37, 78, 191);
+    width: fit-content;
 }
 p {
     font-weight: bold;
 }
-

@@ -5,14 +5,25 @@ h1 {
     width: fit-content;
 }
 
-ul li {
-    color: red;
-    border-bottom: 5px solid red;
+ul {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    border: double 5px #4ec4d3;
     width: fit-content;
 }
 
+ul li {
+    font-weight: bold;
+    border-bottom: solid black;
+}
+
 h2 {
-    border-bottom: 5px solid rgb(37, 78, 191);
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #474747;
+    background: whitesmoke;/*背景色*/
+    border-left: double 7px #4ec4d3;/*左線*/
+    border-right: double 7px #4ec4d3;/*右線*/
     width: fit-content;
 }
 p {

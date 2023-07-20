@@ -220,15 +220,38 @@ console.log(data.results.shop[1].station_name);
 console.log(data.results.shop[1].sub_genre.name);
 
 //課題4-2
+let div_result = document.querySelector('div#result');
+let tb = document.createElement('table');
+
+div_result.insertAdjacentElement('beforeend', tb);
+
+let tr1 = document.createElement('tr');
+tb.insertAdjacentElement('beforeend', tr1);
+
+let td1 = document.createElement('td');
+td1.textContent = "アクセス";
+tr1.insertAdjacentElement('beforeend', td1);
+
+let td2 = document.createElement('td');
+td2.textContent = data.results.shop[0].access;
+tr1.insertAdjacentElement('beforeend', td2);
+
+let tr2 = document.createElement('tr');
+tb.insertAdjacentElement('beforeend', tr2);
+
+let td3 = document.createElement('td');
+td3.textContent = "住所";
+tr2.insertAdjacentElement('beforeend', td3);
+
+let td4 = document.createElement('td');
+td4.textContent = data.results.shop[0].address;
+tr2.insertAdjacentElement('beforeend', td4);
 
 
-let n = document.querySelector('div#result');
-let table = document.createElement('table');
 
 
 let b = document.querySelector('#sendRequest');
 b.addEventListener('click', sendRequest);
-
 
 // 通信を開始する処理
 function sendRequest() {

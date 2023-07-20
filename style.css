@@ -21,9 +21,9 @@ h2 {
     padding: 0.5em 1em;
     margin: 2em 0;
     color: #474747;
-    background: whitesmoke;/*背景色*/
-    border-left: double 7px #4ec4d3;/*左線*/
-    border-right: double 7px #4ec4d3;/*右線*/
+    background: whitesmoke;
+    border-left: double 7px rgb(80, 219, 147);
+    border-right: double 7px rgb(80, 219, 147);
     width: fit-content;
 }
 p {

@@ -1,11 +1,12 @@
 h1 {
     padding: 1rem 2rem;
+    margin: 2em 0;
     border-left: 6px dashed #000;
     background: linear-gradient(0.25turn,rgb(80, 219, 147), #ffefaf);
     width: fit-content;
 }
 
-ul {
+ul.group1 {
     padding: 0.5em 1em;
     margin: 2em 0;
     border: double 5px #4ec4d3;
@@ -19,7 +20,7 @@ ul li {
 
 h2 {
     padding: 0.5em 1em;
-    margin: 2em 0;
+    margin: 1em 0;
     color: #474747;
     background: whitesmoke;
     border-left: double 7px rgb(80, 219, 147);
@@ -28,4 +29,11 @@ h2 {
 }
 p {
     font-weight: bold;
+}
+
+div {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    border: double 5px #ed3f3f;
+    width: fit-content;
 }

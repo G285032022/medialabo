@@ -218,3 +218,6 @@ console.log(data.results.shop[1].genre.name);
 console.log(data.results.shop[1].open);
 console.log(data.results.shop[1].station_name);
 console.log(data.results.shop[1].sub_genre.name);
+
+let n = document.querySelector('div#result');
+let table = document.createElement('table');

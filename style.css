@@ -31,9 +31,22 @@ p {
     font-weight: bold;
 }
 
-div {
+div.group2 ,div.group3 {
     padding: 0.5em 1em;
     margin: 2em 0;
     border: double 5px #ed3f3f;
+    width: fit-content;
+}
+
+div.group4, div.group5, div.group6, div.group7, div.group8 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #232323;
+    background: #fff8e8;
+    border-left: solid 10px #ffc06e;
+}
+
+h3 {
+    border-bottom: 3px solid black;
     width: fit-content;
 }

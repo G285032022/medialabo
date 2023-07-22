@@ -203,14 +203,14 @@ let data = {
 //検索結果1件目
 for(let data_shop = 0;data_shop < data.results.shop.length;data_shop++){
   console.log("検索結果"+data_shop+"件目");
-  console.log(data_shop.access);
-  console.log(data_shop.address);
-  console.log(data_shop.budget.name);
-  console.log(data_shop.catch);
-  console.log(data_shop.genre.name);
-  console.log(data_shop.open);
-  console.log(data_shop.station_name);
-  console.log(data_shop.sub_genre.name);
+  console.log(data.results.shop[data_shop].access);
+  console.log(data.results.shop[data_shop].address);
+  console.log(data.results.shop[data_shop].budget.name);
+  console.log(data.results.shop[data_shop].catch);
+  console.log(data.results.shop[data_shop].genre.name);
+  console.log(data.results.shop[data_shop].open);
+  console.log(data.results.shop[data_shop].station_name);
+  console.log(data.results.shop[data_shop].sub_genre.name);
 }
 
 //課題4-2

@@ -73,6 +73,11 @@ div.group8 {
     margin-left: auto;
 }
 
+h3.double {
+    border-bottom: 15px double black;
+    text-align: center;
+}
+
 h3 {
     border-bottom: 3px solid black;
     text-align: center;

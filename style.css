@@ -3,7 +3,7 @@ h1 {
     margin: 2em 0;
     border-left: 6px dashed #000;
     background: linear-gradient(0.25turn,rgb(80, 219, 147), #ffefaf);
-    width: fit-content;
+    text-align: center;
 }
 
 ul.group1 {
@@ -11,6 +11,8 @@ ul.group1 {
     margin: 2em 0;
     border: double 5px #4ec4d3;
     width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 ul li {
@@ -26,9 +28,17 @@ h2 {
     border-left: double 7px rgb(80, 219, 147);
     border-right: double 7px rgb(80, 219, 147);
     width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
 }
+
 p {
     font-weight: bold;
+    text-align: center;
+}
+
+div.all_group {
+    grid-template-columns: 1fr 1fr;
 }
 
 div.group2 ,div.group3 {
@@ -36,17 +46,39 @@ div.group2 ,div.group3 {
     margin: 2em 0;
     border: double 5px #ed3f3f;
     width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-div.group4, div.group5, div.group6, div.group7, div.group8 {
+div.group4, div.group5, div.group6, div.group7 {
     padding: 0.5em 1em;
-    margin: 2em 0;
+    margin: 2em;
+    color: #232323;
+    background: #fff8e8;
+    border-top: solid 30px #ffc06e;
+}
+
+div {
+    display: grid;
+}
+
+div.group8 {
+    padding: 0.5em 1em;
+    margin: 2em;
     color: #232323;
     background: #fff8e8;
     border-left: solid 10px #ffc06e;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 h3 {
     border-bottom: 3px solid black;
-    width: fit-content;
+    text-align: center;
+}
+
+ol li {
+    list-style: none;
+    text-align: center;
 }

@@ -200,7 +200,6 @@ let data = {
 };
 
 /////////// 課題3-2 ここからプログラムを書こう
-//検索結果1件目
 for(let data_shop = 0;data_shop < data.results.shop.length;data_shop++){
   console.log("検索結果"+data_shop+"件目");
   console.log(data.results.shop[data_shop].access);
@@ -214,6 +213,17 @@ for(let data_shop = 0;data_shop < data.results.shop.length;data_shop++){
 }
 
 //課題4-2
+for(let data_shop = 0;data_shop < data.results.shop.length;data_shop++){
+  console.log("検索結果"+data_shop+"件目");
+  console.log(data.results.shop[data_shop].access);
+  console.log(data.results.shop[data_shop].address);
+  console.log(data.results.shop[data_shop].budget.name);
+  console.log(data.results.shop[data_shop].catch);
+  console.log(data.results.shop[data_shop].genre.name);
+  console.log(data.results.shop[data_shop].open);
+  console.log(data.results.shop[data_shop].station_name);
+  console.log(data.results.shop[data_shop].sub_genre.name);
+}
 let div_result = document.querySelector('div#result');
 let tb = document.createElement('table');
 

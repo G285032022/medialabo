@@ -201,23 +201,62 @@ let data = {
 
 /////////// 課題3-2 ここからプログラムを書こう
 for(let data_shop = 0;data_shop < data.results.shop.length;data_shop++){
-  console.log("検索結果"+(data_shop + 1)+"件目");
-  console.log(data.results.shop[data_shop].name);
-  console.log(data.results.shop[data_shop].access);
-  console.log(data.results.shop[data_shop].address);
-  console.log(data.results.shop[data_shop].budget.name);
-  console.log(data.results.shop[data_shop].catch);
-  console.log(data.results.shop[data_shop].genre.name);
-  console.log(data.results.shop[data_shop].open);
-  console.log(data.results.shop[data_shop].station_name);
-  console.log(data.results.shop[data_shop].sub_genre.name);
+  console.log("検索結果"+(data_shop + 1)+"件目");//1
+  console.log(data.results.shop[data_shop].name);//2
+  console.log(data.results.shop[data_shop].access);//3
+  console.log(data.results.shop[data_shop].address);//4
+  console.log(data.results.shop[data_shop].budget.name)//5;
+  console.log(data.results.shop[data_shop].catch);//6
+  console.log(data.results.shop[data_shop].genre.name);//7
+  console.log(data.results.shop[data_shop].open);//8
+  console.log(data.results.shop[data_shop].station_name);//9
+  console.log(data.results.shop[data_shop].sub_genre.name);//10
 }
 
 //課題4-2
 for(let data_shop = 0;data_shop < data.results.shop.length;data_shop++){
   let div_result = document.querySelector('div#result');
 
-  let p = 
+  let p1 = document.createElement('p');
+  p1.textContent = "検索結果"+(data_shop + 1)+"件目";
+  div_result.insertAdjacentElement('beforeend', p1);
+
+  let p2 = document.createElement('p');
+  p2.textContent = data.results.shop[data_shop].name;
+  div_result.insertAdjacentElement('beforeend', p2);
+
+  let p3 = document.createElement('p');
+  p3.textContent = data.results.shop[data_shop].access;
+  div_result.insertAdjacentElement('beforeend', p3);
+
+  let p4 = document.createElement('p');
+  p4.textContent = data.results.shop[data_shop].address;
+  div_result.insertAdjacentElement('beforeend', p4);
+
+  let p5 = document.createElement('p');
+  p5.textContent = data.results.shop[data_shop].budget.name;
+  div_result.insertAdjacentElement('beforeend', p5);
+
+  let p6 = document.createElement('p');
+  p6.textContent = data.results.shop[data_shop].catch;
+  div_result.insertAdjacentElement('beforeend', p6);
+
+  let p7 = document.createElement('p');
+  p7.textContent = data.results.shop[data_shop].genre.name;
+  div_result.insertAdjacentElement('beforeend', p7);
+
+  let p8 = document.createElement('p');
+  p8.textContent = data.results.shop[data_shop].open;
+  div_result.insertAdjacentElement('beforeend', p8);
+
+  let p9 = document.createElement('p');
+  p9.textContent = data.results.shop[data_shop].station_name;
+  div_result.insertAdjacentElement('beforeend', p9);
+
+  let p10 = document.createElement('p');
+  p10.textContent = data.results.shop[data_shop].sub_genre.name;
+  div_result.insertAdjacentElement('beforeend', p10);
+
   console.log("検索結果"+(data_shop + 1)+"件目");
   console.log(data.results.shop[data_shop].name);
   console.log(data.results.shop[data_shop].access);
@@ -229,29 +268,6 @@ for(let data_shop = 0;data_shop < data.results.shop.length;data_shop++){
   console.log(data.results.shop[data_shop].station_name);
   console.log(data.results.shop[data_shop].sub_genre.name);
 }
-let div_result = document.querySelector('div#result');
-
-let tr1 = document.createElement('tr');
-tb.insertAdjacentElement('beforeend', tr1);
-
-let td1 = document.createElement('td');
-td1.textContent = "アクセス";
-tr1.insertAdjacentElement('beforeend', td1);
-
-let td2 = document.createElement('td');
-td2.textContent = data.results.shop[0].access;
-tr1.insertAdjacentElement('beforeend', td2);
-
-let tr2 = document.createElement('tr');
-tb.insertAdjacentElement('beforeend', tr2);
-
-let td3 = document.createElement('td');
-td3.textContent = "住所";
-tr2.insertAdjacentElement('beforeend', td3);
-
-let td4 = document.createElement('td');
-td4.textContent = data.results.shop[0].address;
-tr2.insertAdjacentElement('beforeend', td4);
 
 
 

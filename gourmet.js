@@ -278,6 +278,12 @@ b.addEventListener('click', sendRequest);
 // 通信を開始する処理
 function sendRequest() {
     // URL を設定
+    let rs = document.querySelectorAll('input[name="genre"]');
+    for (let r of rs) {
+        if (r.checked) {        // r が選択されていたら
+            console.log(r.value);
+        }
+    }
     let url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/'+ G006 + '.json';
 
     // 通信開始

@@ -201,7 +201,8 @@ let data = {
 
 /////////// 課題3-2 ここからプログラムを書こう
 for(let data_shop = 0;data_shop < data.results.shop.length;data_shop++){
-  console.log("検索結果"+data_shop+"件目");
+  console.log("検索結果"+(data_shop + 1)+"件目");
+  console.log(data.results.shop[data_shop].name);
   console.log(data.results.shop[data_shop].access);
   console.log(data.results.shop[data_shop].address);
   console.log(data.results.shop[data_shop].budget.name);
@@ -214,7 +215,11 @@ for(let data_shop = 0;data_shop < data.results.shop.length;data_shop++){
 
 //課題4-2
 for(let data_shop = 0;data_shop < data.results.shop.length;data_shop++){
-  console.log("検索結果"+data_shop+"件目");
+  let div_result = document.querySelector('div#result');
+
+  let p = 
+  console.log("検索結果"+(data_shop + 1)+"件目");
+  console.log(data.results.shop[data_shop].name);
   console.log(data.results.shop[data_shop].access);
   console.log(data.results.shop[data_shop].address);
   console.log(data.results.shop[data_shop].budget.name);
@@ -225,9 +230,6 @@ for(let data_shop = 0;data_shop < data.results.shop.length;data_shop++){
   console.log(data.results.shop[data_shop].sub_genre.name);
 }
 let div_result = document.querySelector('div#result');
-let tb = document.createElement('table');
-
-div_result.insertAdjacentElement('beforeend', tb);
 
 let tr1 = document.createElement('tr');
 tb.insertAdjacentElement('beforeend', tr1);
@@ -260,7 +262,7 @@ b.addEventListener('click', sendRequest);
 // 通信を開始する処理
 function sendRequest() {
     // URL を設定
-    let url = 'https://www.nishita-lab.org/web-contents/jsons/test.json';
+    let url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/'+ G006 + '.json';
 
     // 通信開始
     axios.get(url)

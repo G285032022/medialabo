@@ -6,7 +6,7 @@ h1 {
     text-align: center;
 }
 
-ul.group1 {
+ul.ul_css1 {
     padding: 0.5em 1em;
     margin: 2em 0;
     border: double 5px #4ec4d3;
@@ -32,14 +32,10 @@ h2 {
     margin-left: auto;
 }
 
-div.group2 p {
+div.divCss1 p {
     font-weight: bold;
     text-align: center;
-}
-
-div.group3 p {
-    font-weight: bold;
-    text-align: center;
+    width: 72vw;
 }
 
 p {
@@ -51,7 +47,7 @@ div.all_group {
     grid-template-columns: 1fr 1fr;
 }
 
-div.group2 ,div.group3 {
+.divCss1 {
     padding: 0.5em 1em;
     margin: 2em 0;
     border: double 5px #ed3f3f;
@@ -60,7 +56,7 @@ div.group2 ,div.group3 {
     margin-left: auto;
 }
 
-div.group4, div.group5, div.group6, div.group7 {
+.group2 {
     padding: 0.5em 1em;
     margin: 2em;
     color: #232323;
@@ -72,7 +68,7 @@ div {
     display: grid;
 }
 
-div.group8 {
+.group3 {
     padding: 0.5em 1em;
     margin: 2em;
     color: #232323;
@@ -98,7 +94,7 @@ ol li {
     text-align: center;
 }
 
-.this {
+.dtCss {
     padding: 0px 0px 0px 140px;
 }
 

@@ -32,6 +32,16 @@ h2 {
     margin-left: auto;
 }
 
+div.group2 p {
+    font-weight: bold;
+    text-align: center;
+}
+
+div.group3 p {
+    font-weight: bold;
+    text-align: center;
+}
+
 p {
     font-weight: bold;
     text-align: center;
@@ -85,5 +95,13 @@ h3 {
 
 ol li {
     list-style: none;
+    text-align: center;
+}
+
+.this {
+    padding: 0px 0px 0px 140px;
+}
+
+h5 {
     text-align: center;
 }

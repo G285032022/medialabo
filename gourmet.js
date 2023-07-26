@@ -200,7 +200,7 @@ let data = {
 };
 
 /////////// 課題3-2 ここからプログラムを書こう
-for(let data_shop = 0;data_shop < data.results.shop.length;data_shop++){
+/*for(let data_shop = 0;data_shop < data.results.shop.length;data_shop++){
   console.log("検索結果"+(data_shop + 1)+"件目");//1
   console.log(data.results.shop[data_shop].name);//2
   console.log(data.results.shop[data_shop].access);//3
@@ -267,7 +267,7 @@ for(let data_shop = 0;data_shop < data.results.shop.length;data_shop++){
   console.log(data.results.shop[data_shop].open);
   console.log(data.results.shop[data_shop].station_name);
   console.log(data.results.shop[data_shop].sub_genre.name);
-}
+}*/
 
 
 
@@ -286,7 +286,6 @@ function sendRequest() {
           console.log(r.value);
         }
     }
-    //url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/'+ r.value + '.json';
 
     // 通信開始
     axios.get(url)
@@ -309,61 +308,7 @@ function showResult(resp) {
     console.log(data);
 
     // data.x を出力
-    for(let data_shop = 0;data_shop < data.results.shop.length;data_shop++){
-      let div_result = document.querySelector('div#result');
-    
-      let p1 = document.createElement('p');
-      p1.textContent = "検索結果"+(data_shop + 1)+"件目";
-      div_result.insertAdjacentElement('beforeend', p1);
-    
-      let p2 = document.createElement('p');
-      p2.textContent = data.results.shop[data_shop].name;
-      div_result.insertAdjacentElement('beforeend', p2);
-    
-      let p3 = document.createElement('p');
-      p3.textContent = data.results.shop[data_shop].access;
-      div_result.insertAdjacentElement('beforeend', p3);
-    
-      let p4 = document.createElement('p');
-      p4.textContent = data.results.shop[data_shop].address;
-      div_result.insertAdjacentElement('beforeend', p4);
-    
-      let p5 = document.createElement('p');
-      p5.textContent = data.results.shop[data_shop].budget.name;
-      div_result.insertAdjacentElement('beforeend', p5);
-    
-      let p6 = document.createElement('p');
-      p6.textContent = data.results.shop[data_shop].catch;
-      div_result.insertAdjacentElement('beforeend', p6);
-    
-      let p7 = document.createElement('p');
-      p7.textContent = data.results.shop[data_shop].genre.name;
-      div_result.insertAdjacentElement('beforeend', p7);
-    
-      let p8 = document.createElement('p');
-      p8.textContent = data.results.shop[data_shop].open;
-      div_result.insertAdjacentElement('beforeend', p8);
-    
-      let p9 = document.createElement('p');
-      p9.textContent = data.results.shop[data_shop].station_name;
-      div_result.insertAdjacentElement('beforeend', p9);
-    
-      let p10 = document.createElement('p');
-      p10.textContent = data.results.shop[data_shop].sub_genre.name;
-      div_result.insertAdjacentElement('beforeend', p10);
-    
-      console.log("検索結果"+(data_shop + 1)+"件目");
-      console.log(data.results.shop[data_shop].name);
-      console.log(data.results.shop[data_shop].access);
-      console.log(data.results.shop[data_shop].address);
-      console.log(data.results.shop[data_shop].budget.name);
-      console.log(data.results.shop[data_shop].catch);
-      console.log(data.results.shop[data_shop].genre.name);
-      console.log(data.results.shop[data_shop].open);
-      console.log(data.results.shop[data_shop].station_name);
-      console.log(data.results.shop[data_shop].sub_genre.name);
-    }
-    console.log(data.x);
+    console.log(data.results);
 }
 
 // 通信エラーが発生した時の処理

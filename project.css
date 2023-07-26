@@ -1,12 +1,43 @@
-table {
-    border: 3px solid black;
-    border-collapse: collapse;
-}
-
-td {
-    border: 1px solid black;
+body {
+    background-color: rgb(2, 190, 232);
 }
 
 fieldset {
-    width: fit-content;
+    width: 15rem;
+    background-color: rgba(1, 235, 126, 0.9);
+}
+
+legend {
+    font-size: large;
+    font-weight: bold;
+    background-color: rgba(1, 235, 126, 0.9);
+}
+
+button {
+    margin-top: 1rem;
+    width: 17rem;
+    height: 4rem;
+    background-color: red;
+}
+
+span {
+    font-weight: bold;
+    font-size: 2rem;
+    color: black;
+}
+
+div#shop {
+    margin: 5rem;
+    border: 2px solid black;
+    background-color: white;
+}
+
+h5 {
+    margin-left: 1rem;
+    border-bottom: 0.4rem dotted blue;
+    display: inline-block;
+}
+
+p {
+    margin-left: 1rem;
 }

@@ -294,7 +294,6 @@ function sendRequest() {
         .then(finish);      // 通信の最後の処理
 }
 
-let count = 0;
 // 通信が成功した時の処理
 function showResult(resp) {
     // サーバから送られてきたデータを出力
@@ -309,55 +308,60 @@ function showResult(resp) {
     console.log(data);
 
     // data.x を出力
-    let div_drop = document.querySelector('div#result');
-    if(count >= 1){
-      div_drop.removeChild();
+    let w = document.querySelectorAll('div#result > div#shop');
+    for(let n of w){
+	    n.remove();
     }
-    //let div_koko = document.querySelector('div#koko');
-    //let div = document.createElement('div#result');
-    //div_koko.insertAdjacentElement('beforeend', div);
+    w = document.querySelectorAll('div#result > p');
+    for(let n of w){
+	    n.remove();
+    }
     for(let data_shop = 0;data_shop < data.results.shop.length;data_shop++){
       let div_result = document.querySelector('div#result');
-    
-      let p1 = document.createElement('p');
-      p1.textContent = "検索結果"+(data_shop + 1)+"件目";
-      div_result.insertAdjacentElement('beforeend', p1);
+      
+      let div = document.createElement('div');
+      div.id = 'shop';
+      div_result.insertAdjacentElement('beforeend', div);
+
+      let h = document.createElement('h5');
+      h.textContent = "検索結果"+(data_shop + 1)+"件目";
+      div.insertAdjacentElement('beforeend', h);
     
       let p2 = document.createElement('p');
       p2.textContent = data.results.shop[data_shop].name;
-      div_result.insertAdjacentElement('beforeend', p2);
+      div.insertAdjacentElement('beforeend', p2);
     
       let p3 = document.createElement('p');
       p3.textContent = data.results.shop[data_shop].access;
-      div_result.insertAdjacentElement('beforeend', p3);
+      div.insertAdjacentElement('beforeend', p3);
     
       let p4 = document.createElement('p');
       p4.textContent = data.results.shop[data_shop].address;
-      div_result.insertAdjacentElement('beforeend', p4);
+      div.insertAdjacentElement('beforeend', p4);
     
       let p5 = document.createElement('p');
       p5.textContent = data.results.shop[data_shop].budget.name;
-      div_result.insertAdjacentElement('beforeend', p5);
+      div.insertAdjacentElement('beforeend', p5);
     
       let p6 = document.createElement('p');
       p6.textContent = data.results.shop[data_shop].catch;
-      div_result.insertAdjacentElement('beforeend', p6);
+      div.insertAdjacentElement('beforeend', p6);
     
       let p7 = document.createElement('p');
       p7.textContent = data.results.shop[data_shop].genre.name;
-      div_result.insertAdjacentElement('beforeend', p7);
+      div.insertAdjacentElement('beforeend', p7);
     
       let p8 = document.createElement('p');
       p8.textContent = data.results.shop[data_shop].open;
-      div_result.insertAdjacentElement('beforeend', p8);
+      div.insertAdjacentElement('beforeend', p8);
     
       let p9 = document.createElement('p');
       p9.textContent = data.results.shop[data_shop].station_name;
-      div_result.insertAdjacentElement('beforeend', p9);
+      div.insertAdjacentElement('beforeend', p9);
     
       let p10 = document.createElement('p');
       p10.textContent = data.results.shop[data_shop].sub_genre.name;
-      div_result.insertAdjacentElement('beforeend', p10);
+      div.insertAdjacentElement('beforeend', p10);
     
       console.log("検索結果"+(data_shop + 1)+"件目");
       console.log(data.results.shop[data_shop].name);
@@ -370,7 +374,11 @@ function showResult(resp) {
       console.log(data.results.shop[data_shop].station_name);
       console.log(data.results.shop[data_shop].sub_genre.name);
     }
-    count++;
+    let div_result = document.querySelector('div#result');
+    let end_text = document.createElement('');
+    end_text.className = 'endtext';
+    end_text.textContent = "検索結果は以上です。";
+    div_result.insertAdjacentElement('beforeend', end_text);
 }
 
 // 通信エラーが発生した時の処理

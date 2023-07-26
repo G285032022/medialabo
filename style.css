@@ -7,12 +7,10 @@ h1 {
 }
 
 ul.ul_css1 {
-    padding: 0.5rem 1rem;
-    margin: 2em 0;
+    padding: 1rem;
+    margin: 0.5rem auto 1rem;
     border: double 5px #4ec4d3;
     width: fit-content;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 ul li {
@@ -21,15 +19,13 @@ ul li {
 }
 
 h2 {
-    padding: 0.5em 1em;
-    margin: 1em 0;
+    padding: 1rem;
+    margin: 0.5rem auto 1rem;
     color: #474747;
     background: whitesmoke;
     border-left: double 7px rgb(80, 219, 147);
     border-right: double 7px rgb(80, 219, 147);
     width: fit-content;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 div.divCss1 p {

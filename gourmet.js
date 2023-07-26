@@ -332,35 +332,35 @@ function showResult(resp) {
       div.insertAdjacentElement('beforeend', p2);
     
       let p3 = document.createElement('p');
-      p3.textContent = data.results.shop[data_shop].access;
+      p3.textContent = "アクセス =>"+data.results.shop[data_shop].access;
       div.insertAdjacentElement('beforeend', p3);
     
       let p4 = document.createElement('p');
-      p4.textContent = data.results.shop[data_shop].address;
+      p4.textContent = "住所 =>"+data.results.shop[data_shop].address;
       div.insertAdjacentElement('beforeend', p4);
     
       let p5 = document.createElement('p');
-      p5.textContent = data.results.shop[data_shop].budget.name;
+      p5.textContent = "予算 =>"+data.results.shop[data_shop].budget.name;
       div.insertAdjacentElement('beforeend', p5);
     
       let p6 = document.createElement('p');
-      p6.textContent = data.results.shop[data_shop].catch;
+      p6.textContent = "キャッチコピー =>"+data.results.shop[data_shop].catch;
       div.insertAdjacentElement('beforeend', p6);
     
       let p7 = document.createElement('p');
-      p7.textContent = data.results.shop[data_shop].genre.name;
+      p7.textContent = "ジャンル =>"+data.results.shop[data_shop].genre.name;
       div.insertAdjacentElement('beforeend', p7);
     
       let p8 = document.createElement('p');
-      p8.textContent = data.results.shop[data_shop].open;
+      p8.textContent = "営業時間 =>"+data.results.shop[data_shop].open;
       div.insertAdjacentElement('beforeend', p8);
     
       let p9 = document.createElement('p');
-      p9.textContent = data.results.shop[data_shop].station_name;
+      p9.textContent = "最寄駅 =>"+data.results.shop[data_shop].station_name;
       div.insertAdjacentElement('beforeend', p9);
     
       let p10 = document.createElement('p');
-      p10.textContent = data.results.shop[data_shop].sub_genre.name;
+      p10.textContent = "サブジャンル =>"+data.results.shop[data_shop].sub_genre.name;
       div.insertAdjacentElement('beforeend', p10);
     
       console.log("検索結果"+(data_shop + 1)+"件目");

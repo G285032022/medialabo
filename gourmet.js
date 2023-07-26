@@ -284,7 +284,7 @@ function sendRequest() {
             console.log(r.value);
         }
     }
-    let url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/'+ G006 + '.json';
+    let url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/'+ r.value + '.json';
 
     // 通信開始
     axios.get(url)
